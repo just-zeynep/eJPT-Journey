@@ -25,13 +25,24 @@ This repository documents my eJPT certification journey — every note I take, e
 eJPT-Journey/
 │
 ├── notes/
-│   ├── 01-networking-fundamentals/
-│   ├── 02-web-application-basics/
-│   ├── 03-host-discovery/
-│   ├── 04-enumeration/
-│   ├── 05-vulnerability-assessment/
-│   ├── 06-exploitation/
-│   └── 07-post-exploitation/
+│   ├── 02-Assessment-Methodologies/
+│   │   ├── 01-information-gathering/
+│   │   ├── 02-footprinting-scanning/
+│   │   ├── 03-enumeration/
+│   │   └── 04-vulnerability-assessment/
+│   ├── 03-Host-and-Networking-Auditing/
+│   │   └── auditing-fundamentals/
+│   ├── 04-Host-and-Network-Penetration-Testing/
+│   │   ├── 01-system-host-based-attacks/
+│   │   ├── 02-network-based-attacks/
+│   │   ├── 03-metasploit-framework/
+│   │   ├── 04-exploitation/
+│   │   ├── 05-post-exploitation/
+│   │   └── 06-social-engineering/
+│   ├── 05-Web-Application-Penetration-Testing/
+│   │   └── web-and-http-protocol/
+│   └── 06-AI-Enhanced-Pentesting/
+│       └── generative-ai-for-pentesters/
 │
 ├── cheatsheets/
 │   ├── nmap-cheatsheet.md
@@ -39,77 +50,33 @@ eJPT-Journey/
 │   ├── web-app-cheatsheet.md
 │   └── linux-commands.md
 │
-├── writeups/
-│   ├── lab-01/
-│   ├── lab-02/
-│   └── ...
-│
-└── resources/
-    └── useful-links.md
+└── writeups/
+    ├── lab-01/
+    ├── lab-02/
+    └── ...
 ```
 
 ---
 
 ## Progress Tracker
 
-### Core Topics
-
-| Topic | Status | Notes |
-|-------|--------|-------|
-| Networking Fundamentals | 🔄 In Progress | TCP/IP, OSI, Protocols |
-| Web Application Basics | ⏳ Pending | HTTP, OWASP Top 10 |
-| Host Discovery & Scanning | ⏳ Pending | Nmap, Ping sweeps |
-| Enumeration | ⏳ Pending | Services, SMB, FTP |
-| Vulnerability Assessment | ⏳ Pending | Nessus, Manual |
-| Exploitation | ⏳ Pending | Metasploit, Manual exploits |
-| Post Exploitation | ⏳ Pending | Pivoting, Persistence |
-| Reporting | ⏳ Pending | Writing findings |
+| Section | Course | Status |
+|---------|--------|--------|
+| 02 — Assessment Methodologies | Information Gathering | ⏳ Pending |
+| 02 — Assessment Methodologies | Footprinting & Scanning | ⏳ Pending |
+| 02 — Assessment Methodologies | Enumeration | ⏳ Pending |
+| 02 — Assessment Methodologies | Vulnerability Assessment | ⏳ Pending |
+| 03 — Host & Networking Auditing | Auditing Fundamentals | ⏳ Pending |
+| 04 — Host & Network Penetration Testing | System/Host Based Attacks | ⏳ Pending |
+| 04 — Host & Network Penetration Testing | Network-Based Attacks | ⏳ Pending |
+| 04 — Host & Network Penetration Testing | Metasploit Framework | ⏳ Pending |
+| 04 — Host & Network Penetration Testing | Exploitation | ⏳ Pending |
+| 04 — Host & Network Penetration Testing | Post-Exploitation | ⏳ Pending |
+| 04 — Host & Network Penetration Testing | Social Engineering | ⏳ Pending |
+| 05 — Web Application Penetration Testing | Web & HTTP Protocol | ⏳ Pending |
+| 06 — AI Enhanced Pentesting | Generative AI for Pentesters | ⏳ Pending |
 
 > Legend: ✅ Done &nbsp;|&nbsp; 🔄 In Progress &nbsp;|&nbsp; ⏳ Pending
-
----
-
-## Notes Index
-
-### 01 — Networking Fundamentals
-- [ ] OSI Model & TCP/IP Stack
-- [ ] IP Addressing & Subnetting
-- [ ] Common Protocols (HTTP, FTP, SSH, SMB, DNS)
-- [ ] Packet Analysis with Wireshark
-
-### 02 — Web Application Basics
-- [ ] HTTP Request/Response Cycle
-- [ ] OWASP Top 10 Overview
-- [ ] Burp Suite Basics
-- [ ] Directory Enumeration
-
-### 03 — Host Discovery
-- [ ] Ping Sweeps
-- [ ] Nmap Host Discovery
-- [ ] ARP Scanning
-
-### 04 — Enumeration
-- [ ] Service Version Detection
-- [ ] SMB Enumeration
-- [ ] FTP Enumeration
-- [ ] SSH Enumeration
-- [ ] Web Directory Brute Force
-
-### 05 — Vulnerability Assessment
-- [ ] Manual Assessment Methodology
-- [ ] Nessus Basics
-- [ ] Searchsploit & Exploit-DB
-
-### 06 — Exploitation
-- [ ] Metasploit Framework
-- [ ] Manual Exploitation
-- [ ] Password Attacks (Hydra, John)
-
-### 07 — Post Exploitation
-- [ ] Privilege Escalation (Linux & Windows)
-- [ ] Pivoting & Port Forwarding
-- [ ] Persistence Techniques
-- [ ] Covering Tracks
 
 ---
 
@@ -160,6 +127,8 @@ eJPT-Journey/
 - [TryHackMe](https://tryhackme.com) — Beginner-friendly rooms
 - [Exploit-DB](https://exploit-db.com) — Exploit database
 - [GTFOBins](https://gtfobins.github.io) — Linux privilege escalation
+- [HackTricks](https://book.hacktricks.xyz) — Pentesting bible
+- [PortSwigger Web Security Academy](https://portswigger.net/web-security) — Free web app hacking
 
 ---
 
@@ -167,15 +136,15 @@ eJPT-Journey/
 
 | Week | Focus |
 |------|-------|
-| Week 1 | Networking + Host Discovery |
-| Week 2 | Enumeration + Vulnerability Assessment |
-| Week 3 | Exploitation + Metasploit |
-| Week 4 | Post Exploitation + Exam Prep |
+| Week 1 | Assessment Methodologies — Information Gathering + Footprinting |
+| Week 2 | Enumeration + Vulnerability Assessment + Auditing |
+| Week 3 | Host & Network Penetration Testing — Metasploit + Exploitation |
+| Week 4 | Post-Exploitation + Web App + Exam Prep |
 
 ---
 
 <div align="center">
 
-*Part of my [SOC Career Path](https://github.com/yourusername/SOC-Career-Path)*
+*Part of my [SOC Career Path](https://github.com/just-zeynep/SOC-Career-Path)*
 
 </div>
